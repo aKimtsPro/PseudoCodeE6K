@@ -1,0 +1,33 @@
+
+
+19 / 17
+
+PROCEDURE remplirMarmitte(marmitte: Boolean[], sceau: Boolean[])
+DEBUT
+
+    remplir(sceau)
+    
+    POUR i DE 0 À taille(marmitte)-1 FAIRE
+        
+        sceau[i % 17] <- false
+        marmitte[i] <- true
+        SI i == 16 ALORS
+            remplir(sceau)
+        FINSI
+
+    FINP
+    
+
+FIN
+
+
+PROCEDURE remplir(sceau: Boolean[])
+DEBUT
+    
+    POUR i DE 0 À taille(sceau)-1 FAIRE
+        SI !sceau[i] ALORS
+            sceau[i] <- true
+        FINSI
+    FINP
+
+FIN

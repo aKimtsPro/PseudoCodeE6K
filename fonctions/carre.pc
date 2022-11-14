@@ -1,0 +1,6 @@
+FONCTION carre(n: Entier) : Entier
+DEBUT
+    RENVOIE n * n
+FIN
+
+// O(1)

@@ -1,0 +1,10 @@
+FONCTION factorielle(n : Entier) : Entier
+DEBUT
+    
+    SI n == 1 || n == 0 ALORS
+        RENVOIE 1;
+    FINSI
+
+    RENVOIE n * factorielle(n-1);
+    
+FIN

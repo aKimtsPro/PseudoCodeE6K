@@ -1,0 +1,25 @@
+PROCEDURE nomProcedure(tab1: Entier[], tab2: Entier[], tabRslt: Entier[])
+DEBUT
+
+    SI taille(tab1) + taille(tab2) != taille(tabRslt) ALORS
+        RENVOIE
+    FINSI
+
+    
+    POUR i DE 0 À taille(tabRslt)-1 FAIRE
+        
+        SI i < taille(tab1) ALORS
+
+            tabRslt[i] <- tab1[i]
+
+        SINON
+
+            tabRslt[i] <- tab2[i - taille(tab1) ]
+            
+        FINSI
+
+    FINP
+
+FIN
+
+// O(n)

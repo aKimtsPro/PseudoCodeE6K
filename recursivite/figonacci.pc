@@ -1,0 +1,13 @@
+
+FONCTION fibonacci(n: Entier) : Entier
+DEBUT
+
+    SI n == 1 ALORS
+        RENVOIE 0
+    SINONSI n == 2 ALORS
+        RENVOIE 1
+    SINON
+        RENVOIE fibonacci( n-1 ) + fibonacci( n-2 )
+    FINSI
+    
+FIN

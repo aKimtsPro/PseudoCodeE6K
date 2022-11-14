@@ -1,0 +1,7 @@
+FONCTION combiDes(nbrDes: Entier, nbrFaces: Entier) : Entier
+DEBUT
+    SI nbrDes == 1 ALORS
+        RENVOIE nbrFaces
+    FINSI
+    RENVOIE nbrFaces * combiDes(nbrDes-1)
+FIN

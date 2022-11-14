@@ -1,0 +1,15 @@
+FONCTION couloir(taille: Entier) : Entier
+DEBUT
+
+    SINONSI taille == 0 ALORS
+        RENVOIE 0
+    SINONSI taille == 1 ALORS
+        RENVOIE 2
+    SINONSI taille == 2 ALORS
+        RENVOIE 8
+    SINON
+        RENVOIE 2 * couloir(taille-1) + (8 * couloir(taille-2) / 2)
+    FINSI
+    
+    RENVOIE variable
+FIN

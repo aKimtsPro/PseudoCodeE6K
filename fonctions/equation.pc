@@ -1,0 +1,25 @@
+FONCTION resoudreEquation(a: Reel, b: Reel, c: Reel) : Reel[]
+    rslt: Entier[],
+    delta: Reel
+DEBUT
+
+    delta <- carre(b) - (4*a*c)
+
+    SI delta > 0 ALORS
+        rslt <- { ( -b - racine(delta) ) / 2a, ( -b + racine(delta) ) / 2a } 
+    SINONSI delta == 0 ALORS
+        rslt <- { -b / 2a }
+    SINON
+        rslt <- {}
+    FINSI
+
+    RENVOIE rslt
+FIN
+
+FONCTION carre(n: Reel) : Reel
+DEBUT
+    RENVOIE n * n
+FIN
+
+FONCTION racine(n: Reel): Reel
+
