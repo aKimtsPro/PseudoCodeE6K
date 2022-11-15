@@ -8,7 +8,7 @@ DEBUT
     SINONSI taille == 2 ALORS
         RENVOIE 8
     SINON
-        RENVOIE 2 * couloir(taille-1) + (8 * couloir(taille-2) / 2)
+        RENVOIE 2 * couloir(taille-1) + 4 * couloir(taille-2)
     FINSI
     
     RENVOIE variable
